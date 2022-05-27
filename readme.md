@@ -1,4 +1,5 @@
 # CuboMagico2D
+http://maferraph.epizy.com/cubomagico2d/
 
 Minha filha Pietra adora brincar com cubo mágico, assim como adora joguinhos de sites. Eu desenvolvi um jogo bem simples e sem muita sofisticação gráfica de um cubo mágico 2D, onde podemos clicar na direção que queremos realizar o movimento em cada face do cubo. 
 
