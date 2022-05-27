@@ -1,0 +1,96 @@
+button{
+    padding: 1.0em 1.0em;
+}
+
+.celula_amarelo{
+    background-color: yellow;
+}
+
+.celula_branco{
+    background-color: white;
+}
+
+.celula_vermelho{
+    background-color: red;
+}
+
+.celula_laranja{
+    background-color: orangered;
+}
+
+.celula_verde{
+    background-color: green;
+}
+
+.celula_azul{
+    background-color: blue;
+}
+
+
+table{
+    border: 1px solid;
+    border-spacing: 0px;
+}
+
+.face_frontal{
+    background-color:LemonChiffon;
+}
+
+.face_superior{
+    background-color:LightSkyBlue;
+}
+
+.face_traseiro{
+    background-color:MediumPurple;
+}
+
+.face_inferior{
+    background-color:LightPink;
+}
+
+.face_direita{
+    background-color:LightGreen;
+}
+
+.face_esquerda{
+    background-color:Silver;
+}
+
+td{
+    padding: 1px;
+}
+
+tr{
+    padding: 1px;
+}
+
+tr.tituloface{
+    text-align: center;
+}
+
+a{
+    font-size: 1.5 em;
+	cursor: pointer;
+	color: black;
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+}
+
+a:hover
+{
+    color: violet;
+}
+
+a:active{
+    color: red;
+}
+
+p.face{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:small;
+    display:inline;
+    color: black ;
+    font-weight: bold;
+}

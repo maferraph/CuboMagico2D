@@ -1,0 +1,102 @@
+*********************************************
+* Cubo Mágico 2D 
+* Criado por Mauricio Fernandes Raphael
+* Maio/2022
+* Desenvolvido em REACT-JS
+**********************************************
+
+Explicação do cubo para entender a lógica:
+ 
+Condiderar as seguintes faces com cores iniciais:
+F: Frontal (amarela)
+S: Superior (verde)
+I: Inferior (azul)
+E: Esquerda (vermelho)
+D: Direita (laranja)
+T: Traseira (branca)
+
+Considerar os nomes de cada célula em cada classe, como se vistod de frente:
+    A1  B1  C1
+    A2  B2  C2
+    A3  B3  C3
+
+Considerar a seguinte montagem das faces em 2D:
+            S
+    E   ->  F   ->  D   ->  T
+            I
+ 
+Considerar as seguinte nomeclatura quanto a direção do movimento:
+U: giro para cima
+D: giro para baixo
+R: giro para direita
+L: giro para esquerda
+
+A: que o giro será da coluna A
+B: que o giro será da coluna B
+C: que o giro será da coluna C
+1: que o giro será da linha 1
+2: que o giro será da linha 2
+3: que o giro será da linha 3
+
+Nomeclatura usada na lógica: face + direção ou face + célula
+
+Considerando estas premissa, se montarmos um cubo em 3D para considerar os movimentos
+das células em cada giro, teríamos:
+
+1) Movimento de:    A1->A1 + A2->A2 + A3->A3 ou   
+     (coluna)       B1->B1 + B2->B2 + B3->B3 ou   
+     (IGUAL)        C1->C1 + C2->C2 + C3->C3
+   (Direção)Faces:  (U)F->S , 
+                    (D)F->I , 
+                    (D)S->F ,
+                    (U)I->F
+
+2) Movimento de:    A1->A1 + B1->B1 + C1->C1 ou   
+     (linha)        A2->A2 + B2->B2 + C2->C2 ou   
+     (IGUAL)        C1->C1 + C2->C2 + C3->C3
+   (Direção)Faces:  (R)F->D , 
+                    (L)F->E , 
+                    (R)D->T , 
+                    (L)D->F , 
+                    (R)T->E ,
+                    (L)T->D ,
+                    (L)E->T ,
+                    (R)E->F 
+
+3) Movimento de:    A1->A3 + A2->B3 + A3->C3 ou   
+     (coluna)       B1->A2 + B2->B2 + B3->C2 ou
+                    C1->A1 + C2->B1 + C3->C1
+   (Direção)Faces:  (U)D->S ,
+                    (D)E->I
+
+4) Movimento de:    A1->C1 + A2->B1 + A3->A1 ou   
+     (coluna)       B1->C2 + B2->B2 + B3->A2 ou   
+                    C1->C3 + C2->B3 + C3->A3
+   (Direção)Faces:  (D)D->I , 
+                    (U)E->S 
+
+5) Movimento de:    A1->C3 + A2->C2 + A3->C1 ou   
+     (coluna)       B1->B3 + B2->B2 + B3->B1 ou   
+                    C1->A3 + C2->A2 + C3->A1
+   (Direção)Faces:  (U)S->T , 
+                    (U)T->S ,
+                    (D)T->I , 
+                    (D)I->T
+
+6) Movimento de:    A1->A3 + B1->A2 + C1->A1 ou   
+     (linha)        A2->B3 + B2->B2 + C2->B1 ou   
+                    A3->C3 + B3->C2 + C3->C1
+   (Direção)Faces:  (L)S->E 
+                    (R)I->D
+
+7) Movimento de:    A1->C1 + B1->C2 + C1->C3 ou   
+     (linha)        A2->B1 + B2->B2 + C2->B3 ou   
+                    A3->A1 + B3->A2 + C3->A3
+   (Direção)Faces:  (R)S->D ,
+                    (L)I->E
+
+                    
+
+
+
+

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Anton&family=Dancing+Script&family=Press+Start+2P&display=swap');
+
+table.tabela_container{
+    width: 100%;
+    border-style: none;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    padding-right: auto;
+}
+
+a.a_resetar{
+    visibility:hidden;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+a.a_embaralhar{
+    visibility:visible;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+a.a_menu{
+    vertical-align: middle;
+    height: 100%;
+    padding: 8px; 
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    width: 100%;
+}
+
+li{
+    width: 33%;
+    vertical-align: middle;
+}
+     
+li a{
+    display: block;
+    padding: 16px 12px; 
+    text-decoration: none;
+    color: yellow;
+}
+  
+li a:hover{
+    background-color: #111;
+    color:white;
+}
+
+li a:active{
+    color: red;
+}
+
+img.logo{
+    vertical-align: middle;
+    height: 90%;
+}
+
+img.bandeiras{
+    vertical-align: middle;
+    padding: 2px 2px; 
+}
+
+li.centro{
+    justify-content: center;
+}
+
+li.esquerda{
+    float:left;
+}
+
+li.direita{
+    float: right;
+    vertical-align: middle;
+    text-align: center;
+}
+
+p{
+    color: yellow ;
+    vertical-align: middle;
+}
+
+p.contador{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: large;
+}
+
+p.titulo{
+    text-align: left;
+    font-family: 'Anton', sans-serif;
+    font-size:large;
+    padding-left: 10px;
+    display:inline;
+}
+
+p.filhas{
+    text-align: left;
+    font-family: 'Dancing Script', cursive;
+    font-size:medium;
+    padding-left: 10px;
+}
+
+p.criacao{
+    text-align: right;
+    font-family: 'Akshar', sans-serif;
+    font-size:medium;
+    padding-left: 10px;
+    padding-right: 10px;
+}
